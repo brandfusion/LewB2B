@@ -1,0 +1,55 @@
+.homepage-intro
+  +clearfix
+  font-family: 'Lato', sans-serif
+  font-size: 1.5em
+  font-weight: 300
+  text-align: center
+  padding: 1em
+  border-top: 1px solid $gray
+  border-bottom: 1px solid $gray
+  p 
+    margin: 0
+  a   
+    display: none  
+.homepage-featured-articles
+  +clearfix
+  max-width: 90%
+  margin: 0 auto  
+  padding-top: 4em
+  article 
+    margin-bottom: 4em    
+    a 
+      display: block  
+    figure 
+      margin: 0
+    img 
+      margin: 0 auto 
+    h2 
+      +heading
+      margin-bottom: 1em
+      text-transform: uppercase
+      color: $secondary
+    .paragraphHeader
+      padding-top: 1.5em  
+    .paragraphButton
+      +clearfix
+      float: none !important
+      padding-top: 0.5em
+      a 
+        font-family: "Raleway", sans-serif
+        font-weight: 600
+        text-transform: uppercase 
+        font-size: 0.8em
+        color: $yellow
+        float: none !important
+        display: inline-block 
+        padding: 0
+        &:after 
+          font-family: "FontAwesome"
+          content: "\f105"
+          margin-left: 0.5em
+        &:hover 
+          color: $primary  
+
+
+      
