@@ -1,2 +1,51 @@
 .main-nav
-								
+  background-color: $primary
+  ul 
+    +h-nav
+  a 
+    color: #fff
+    font-size: 1.1em
+    line-height: 1em   
+    padding: 0.5em
+    &:hover 
+      color: #fff
+  li 
+    line-height: 4em
+    margin-right: 3.5em    
+    // &:first-child 
+    //   a 
+    //     padding-left: 0
+  .dropdown-menu-custom
+    position: absolute
+    top: 100%
+    left: 0
+    z-index: 1000
+    display: none
+    min-width: 200px  
+    background-color: $dark-blue
+    a 
+      line-height: 2em
+      display: block       
+      color: #fff
+      display: block
+      margin: 0
+      padding: 0.5em
+      line-height: 1.5em
+      &:hover 
+        background-color: #003765
+    li 
+      float: none 
+      margin: 0   
+  .dropdown
+    position: relative    
+    &:hover 
+      background-color: $dark-blue
+      color: #fff
+      .dropdown-menu-custom
+        display: block   
+  .dropdown-icon
+    &:after
+      font-family: "FontAwesome"
+      content: "\f107"
+      margin-left: 0.5em
+      color: #fff        

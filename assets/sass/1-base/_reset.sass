@@ -18,6 +18,7 @@ a
 	color: $primary
 	&:hover 
 		color: darken(adjust_hue($primary, 136), 11)
+		text-decoration: none
 h1, h2, h3, h4, h5, h6 
 	font-weight: 300
 	margin: 0
@@ -31,3 +32,5 @@ input, button, textarea, select
 	outline: none
 	box-shadow: none
 	border: none
+a, input, select, textarea 
+	transition: all 0.3s ease-out	
