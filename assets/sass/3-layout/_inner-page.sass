@@ -1,0 +1,64 @@
+.heading
+  margin: 0
+  padding: 0
+  +heading
+  .page-heading &
+    font-size: 2em    
+    border-bottom: 2px solid #a3a1a4
+    line-height: 1.5
+    margin-bottom: 1em
+.featured-article
+  padding: 0 $spacing
+  margin-bottom: 1em
+  a 
+    display: block
+  figure 
+    padding-left: 0
+    img 
+      width: 100%
+      max-width: 100%
+  h2, h3 
+    +heading 
+    font-weight: 700
+    color: $primary
+    font-size: 1.4em
+    line-height: 1  
+    margin-bottom: 0.5em
+  a.btn
+    color: $primary
+    text-decoration: underline
+    &:hover 
+      color: $secondary  
+.paragraph-list    
+  padding: 0 $spacing
+  a 
+    display: block
+  figure 
+    padding-left: 0
+    margin-bottom: 2em
+    padding-right: 0px
+    img 
+      width: 100%
+      max-width: 100%
+  h2, h3 
+    +heading 
+    font-weight: 700
+    color: $primary 
+    font-size: 1.4em
+    line-height: 1  
+    margin-bottom: 0.5em   
+  a.btn
+    color: $primary
+    text-decoration: underline   
+    &:hover 
+      color: $secondary 
+.separator
+  background-image: url(../img/separator.jpg)
+  background-size: cover
+  height: 70px
+  background-repeat: no-repeat
+  background-position: top center
+  margin-bottom: 2em
+.items
+  .item 
+    margin-bottom: 2em

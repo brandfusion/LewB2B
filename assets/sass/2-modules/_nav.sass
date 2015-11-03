@@ -1,5 +1,7 @@
 .main-nav
   background-color: $primary
+  .container 
+    padding-left: 0
   ul 
     +h-nav
   a 
@@ -48,4 +50,35 @@
       font-family: "FontAwesome"
       content: "\f107"
       margin-left: 0.5em
-      color: #fff        
+      color: #fff  
+  .social-list 
+    float: right   
+    line-height: 2.5em
+    font-size: 1.5em 
+    a 
+      padding: 0 
+      margin-left: 0.5em  
+      &:hover 
+        color: #18ECC0 
+  #mainNav 
+    float: left 
+    display: inline-block      
+    li:first-child a 
+      padding-left: $spacing
+    li ul li:first-child a      
+      padding-left: 0.5em
+
+.left-navigation
+  a 
+    font-family: "Raleway", "Open Sans", sans-serif
+    font-weight: 800
+    font-size: 1.5em
+    font-weight: 700
+    color: #0e5a9b
+    font-size: 1.4em
+    line-height: 1
+    margin-bottom: 0.5em
+    border-bottom: 1px solid #eee
+    line-height: 2
+    margin-bottom: 0
+    display: block
