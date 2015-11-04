@@ -14,17 +14,7 @@
     +make-xs-column(12)
     text-align: left
     button 
-      background-color: $yellow
-      border: 2px solid $orange
-      border-radius: 10px
-      padding: 0.5em 1em
-      font-size: 1.4em
-      line-height: 1
-      font-weight: 300
-      color: #fff    
-      &:hover 
-        text-decoration: none
-        background-color: $orange     
+     @extend .button-yellow
 .contact-us-form
   +make-row 
   .form-group
@@ -40,14 +30,4 @@
     +make-xs-column(12)
     text-align: left
     button 
-      background-color: $yellow
-      border: 2px solid $orange
-      border-radius: 10px
-      padding: 0.5em 1em
-      font-size: 1.4em
-      line-height: 1
-      font-weight: 300
-      color: #fff    
-      &:hover 
-        text-decoration: none
-        background-color: $orange          
+      @extend .button-yellow       

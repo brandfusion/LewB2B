@@ -9,19 +9,10 @@
   p   
     font-size: 2em  
     font-weight: 300
-  .action
-    background-color: $yellow
-    border: 2px solid $orange
-    border-radius: 10px
-    padding: 0.8em 2em
-    font-size: 1.4em
-    line-height: 1
-    font-weight: 300
-    color: #fff
+  .action  
+    @extend .button-yellow 
     &:after 
       font-family: "FontAwesome"
       content: "\f101"
       margin-left: 0.5em
-    &:hover 
-      text-decoration: none
-      background-color: $orange  
+    
