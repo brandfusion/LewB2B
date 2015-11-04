@@ -1,0 +1,53 @@
+.recipe-title
+  @extend .heading
+  font-size: 2em
+  color: $secondary
+  margin-bottom: 0.5em
+.recipe
+  margin-bottom: 4em
+  h4 
+    +heading 
+    color: $primary
+    margin-bottom: 0.5em
+.recipe-img 
+  margin-bottom: 1em
+  img 
+    width: 100%  
+.ingredients
+  margin-bottom: 2em
+  li
+    .fa 
+      color: $secondary
+      margin-right: 0.5em    
+.recipe-print
+  background-color: $yellow
+  border: 2px solid $orange
+  border-radius: 10px
+  padding: 0.5em 1em
+  font-size: 1.4em
+  line-height: 1
+  font-weight: 600
+  color: #fff
+  &:before 
+    font-family: "FontAwesome"
+    content: "\f02f"
+    margin-right: 0.5em
+  &:hover 
+    text-decoration: none
+    background-color: $orange    
+.recipe-nutritional
+  background-color: $yellow
+  border: 2px solid $orange
+  border-radius: 10px
+  padding: 0.5em 1em
+  font-size: 1.4em
+  line-height: 1
+  font-weight: 600
+  color: #fff
+  &:before 
+    font-family: "FontAwesome"
+    content: "\f0f6"
+    margin-right: 0.5em
+  &:hover 
+    text-decoration: none
+    background-color: $orange
