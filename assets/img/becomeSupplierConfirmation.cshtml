@@ -1,0 +1,57 @@
+﻿<html>
+<head>
+<style type="text/css">
+body,
+th,
+td,
+h3,
+p,
+a,
+strong,
+small { font-family: Arial, Helvetica, sans-serif; }
+th,
+td {
+	text-align: left;
+	vertical-align: top;
+    background-color:#ffffff;
+}
+</style>
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" bgcolor="#fff">
+<div style="width:780px;" style="background-color:#ffffff;">
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tbody>
+      <tr>
+        <td><h2>Thank you for contacting us</h2>
+          <h4>We have received your message. A team member will be in touch with you shortly.</h4></td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h3>Message Details</h3>
+  
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <tbody>
+  	@foreach (LoopItem i in GetLoop("Fields")){   
+  	<tr style="margin-bottom: 5px;">
+        <td style="text-align:left" width="20%">
+  		  	@i.GetValue("Field.Name")
+  		  </td>      
+        <td style="text-align:left; padding-left: 20px;">
+    			@i.GetValue("Field.Value")
+    		</td>
+  	</tr>
+  	}
+	</tbody>
+  </table>
+  <hr>
+  <h4>Thank you,</h4>
+  <p><img src="http://lewzealand.dw-demo.com/Files/Templates/Designs/GoodSourceB2B/assets/img/logo-email.jpg"/></p>
+  <p>3115 Melrose Drive, Suite 160<br/>
+  Carlsbad, California 92010<br/>
+  (800) 776-6758</p>
+  <p><a href="http://www.goodsource.com">www.goodsource.com</a></p>
+
+</div>
+</body>
+</html>
