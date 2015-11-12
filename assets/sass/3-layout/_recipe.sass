@@ -27,6 +27,9 @@
   //     margin-right: 0.5em    
 .recipe-print
   @extend .button-yellow
+  margin-bottom: 0.5em
+  @media (max-width: 767px)
+    display: block 
   &:before 
     font-family: "FontAwesome"
     content: "\f02f"
@@ -36,6 +39,9 @@
   //   background-color: $orange    
 .recipe-nutritional
   @extend .button-yellow
+  margin-bottom: 0.5em
+  @media (max-width: 767px)
+    display: block     
   &:before 
     font-family: "FontAwesome"
     content: "\f0f6"
