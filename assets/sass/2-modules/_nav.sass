@@ -1,10 +1,13 @@
 .main-nav
   display: none  
   background-color: $primary
+  height: 3em
   @media (min-width: 768px)
     display: block   
   @media (max-width: 991px)   
     font-size: 0.8em
+  .fa-home  
+    font-size: 1.6em
   .container 
     padding-left: 0
   ul 
@@ -17,7 +20,7 @@
     &:hover 
       color: #fff
   li 
-    line-height: 4em
+    line-height: 3em
     margin-right: 3.5em    
     // &:first-child 
     //   a 
@@ -40,7 +43,9 @@
       margin: 0
       padding: 0.5em
       line-height: 1.5em
+      text-decoration: none
       &:hover 
+        text-decoration: underline
         background-color: #003765
     li 
       float: none 
@@ -50,6 +55,8 @@
     &:hover 
       background-color: $dark-blue
       color: #fff
+      .dropdown-icon
+        text-decoration: underline      
       .dropdown-menu-custom
         display: block   
   .dropdown-icon
@@ -60,7 +67,7 @@
       color: #fff  
   .social-list 
     float: right   
-    line-height: 2.5em
+    line-height: 2em
     font-size: 1.5em 
     a 
       padding: 0 
