@@ -19,12 +19,14 @@
   margin-bottom: 1em
   img 
     width: 100%  
-.ingredients
+.recipe-ingredients ul 
   margin-bottom: 2em
   // li
   //   .fa 
   //     color: $secondary
-  //     margin-right: 0.5em    
+  //     margin-right: 0.5em 
+.ingredients 
+  margin-bottom: 2em 
 .recipe-print
   @extend .button-yellow
   margin-bottom: 0.5em
@@ -95,3 +97,6 @@
     background-color: #D7ECFF  
   .ident 
     padding-left: 0.5em    
+.recipe-image, .recipe-content
+  @media print 
+    +make-xs-column(6)    

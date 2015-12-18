@@ -55,6 +55,9 @@
     margin-bottom: 1em
   a 
     display: block
+  .paragraphText  
+    a 
+      display: inline-block
   figure 
     padding-left: 0
     margin-bottom: 2em
@@ -86,8 +89,13 @@
 .items
   .item 
     margin-bottom: 2em
+    min-height: auto   
+    @media (min-width: 992px) 
+       min-height: 450px 
     @media (max-width: 767px)
       padding: 0
+    @media (min-width: 1200px)
+      min-height: 500px  
     a 
       color: $primary
       &:hover 
@@ -111,6 +119,7 @@
     padding-left: 1.1em 
     overflow: hidden
     display: block  
+    margin-bottom: 0.5em
 .noPaddingLeft    
   padding-left: 0
 .noPaddingRight  
